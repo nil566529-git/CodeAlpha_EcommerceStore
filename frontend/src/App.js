@@ -19,7 +19,6 @@ function App() {
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
   const logout = () => { localStorage.clear(); setUser(null); };
   const filtered = products.filter(p => p.name.toLowerCase().includes(search.toLowerCase()));
-
   const emojis = { 'Laptop': '💻', 'Headphones': '🎧', 'Smartphone': '📱' };
 
   if (!user) return <Auth onLogin={(name) => setUser(name)} />;
@@ -224,7 +223,7 @@ function App() {
           Shop<span style={{ color: '#ffd700' }}>Easy</span>
         </div>
         <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', margin: 0 }}>
-          2026 ShopEasy. Built with love by {user}
+          2026 ShopEasy. Built with love by Nilesh
         </p>
       </footer>
     </div>

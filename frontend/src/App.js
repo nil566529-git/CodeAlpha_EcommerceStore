@@ -9,7 +9,7 @@ function App() {
   const [search, setSearch] = useState('');
 
   React.useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://shopeasy-backend-2o41.onrender.com/api/products')
       .then(res => res.json())
       .then(data => setProducts(data));
   }, []);
